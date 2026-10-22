@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>caselab · Fundas para tu celular</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<nav><span class="brand">caselab</span><div><a href="#catalogo">Catálogo</a><a href="#como">Cómo comprar</a><a href="#personaliza">Personaliza</a><button class="cartbtn" id="open" aria-label="Abrir carrito">Carrito (<span id="n">0</span>)</button></div></nav>
+
+<header class="hero">
+<div><h1>Tu celular merece un color propio</h1>
+<p>Fundas resistentes en 20 colores. Elige tu marca, escoge tu tono y te lo enviamos a casa.</p>
+<a class="btn" href="#catalogo">Ver fundas</a><a class="btn ghost" href="#personaliza">Crea la tuya</a></div>
+<img src="caselab.png" alt="Logo de caselab: celular rojo, paleta de pintura y pincel">
+</header>
+<div class="perks"><span>Envíos a todo Colombia</span><span>Pago contra entrega</span><span>Garantía de 30 días</span><span>Diseños personalizados</span></div>
+
+<section id="catalogo"><h2>Catálogo</h2><p class="sub">Selecciona la marca de tu celular y agrega al carrito los colores que te gusten.</p>
+<div class="chips" id="chips"></div><div class="grid" id="grid"></div></section>
+
+<section id="como" style="background:var(--wood);color:#2A1713"><h2>Cómo comprar</h2><p class="sub" style="color:#5a3a30">Tres pasos y tu funda va en camino.</p>
+<div class="steps"><div><h3>Elige</h3><p>Escoge tu marca y el color que más te guste.</p></div><div><h3>Confirma por WhatsApp</h3><p>Enviamos tu pedido armado desde el carrito.</p></div><div><h3>Recibe</h3><p>Despachamos en 24 horas y pagas al recibir.</p></div></div></section>
+
+<section class="custom" id="personaliza"><h2>¿Quieres una funda única?</h2><p>Cuéntanos tu idea, tu nombre o tu ilustración favorita y la pintamos para ti. Entrega en 5 a 7 días.</p>
+<a class="btn" id="wa-custom" href="#">Escríbenos por WhatsApp</a></section>
+
+<footer><span class="brand" style="font-size:1.4rem">caselab</span><span>Cartago, Valle del Cauca · WhatsApp 301 400 9703</span><span>© 2026 caselab</span></footer>
+
+<aside id="drawer" aria-label="Carrito"><h2 style="font-size:1.8rem">Tu pedido</h2>
+<p id="marca" class="sub" style="margin:4px 0"></p>
+<ul id="items"></ul><p><strong>Total: <span id="total">$0</span></strong></p>
+<a class="btn" id="send" href="#" style="text-align:center">Enviar pedido por WhatsApp</a>
+<button class="chip" id="close" style="margin-top:12px">Seguir comprando</button></aside>
+<script src="script.js"></script>
+</body></html>
